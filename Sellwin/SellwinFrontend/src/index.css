@@ -88,3 +88,27 @@
 .font-source-sans-pro {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+.banner {
+  padding: 20px;
+  text-align: center;
+
+}
+
+.slideshow-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto; /* Center the container */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
