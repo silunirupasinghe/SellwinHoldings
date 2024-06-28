@@ -10,6 +10,8 @@ import Production from './pages/Production.jsx';
 import Products from './pages/Products.jsx';
 import ContactUs from './pages/ContactUs.jsx';
 import './lib/fontawesome.js'
+import Services from './pages/Sectors.jsx';
+import Sectors from './pages/Sectors.jsx';
 const router = createBrowserRouter([
   {
     element: <RootLayout />,
@@ -22,10 +24,7 @@ const router = createBrowserRouter([
         path: '/AboutUs',
         element: <AboutUs />
       },
-      {
-        path: '/production',
-        element: <Production />
-      },
+      
       {
         path: '/products',
         element: <Products />
@@ -33,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: '/contactUs',
         element: <ContactUs />
+      },
+      {
+        path: '/sectors',
+        element: <Sectors/>
+      },
+      {
+        path: '/production',
+        element: <Production/>
       }
     ]
   }

@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import logo from "../../assets/LOGO.jpg"
-import logo1 from "../../assets/Sellwin logo Copy.jpg"
+//import logo1 from "../../assets/Sellwin logo Copy.jpg"
+import logo1 from "../../assets/logo1.jpg"
+
 
 function Footer() {
   return (
@@ -12,7 +14,7 @@ function Footer() {
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center">
           <div className="mb-8 lg:mb-0 lg:w-1/3">
             <Link to={"/"} className=''>
-              <img src={logo1} alt="Sellwin Logo" className="h-48 w-96 mx-auto lg:mx-0" />
+              <img src={logo1} alt="Sellwin Logo" className="h-48 w-28 md:h48 md:w-48 rounded-full" />
             </Link>
           </div>
 

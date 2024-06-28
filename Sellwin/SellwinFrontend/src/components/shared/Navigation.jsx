@@ -40,8 +40,8 @@ function Navigation() {
               <Link to={"/AboutUs"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
                 About Us
               </Link>
-              <Link to={"/production"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
-                Production
+              <Link to={"/sectors"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
+                Sectors
               </Link>
               <Link to={"/contactUs"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
                 Contact Us

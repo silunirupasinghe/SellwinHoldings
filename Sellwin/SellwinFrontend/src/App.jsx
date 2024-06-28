@@ -4,6 +4,8 @@ import logo from './assets/LOGO.jpg';
 import logo1 from './assets/Sellwin logo Copy.jpg';
 import slideshow1 from './assets/slideshow1.jpg';
 import slideshow2 from './assets/slideshow2.jpg';
+import Sectors from './pages/Sectors';
+import Services from './pages/Services';
 
 const images = [
   slideshow1,
@@ -35,7 +37,7 @@ function App() {
         <h1 className="text-4xl pt-6 text-center font-semibold pb-10">HOME</h1>
       </div>
 
-      <div className="slideshow-container">
+      {/* <div className="slideshow-container">
         <button className="prev" onClick={prevSlide}>&#10094;</button>
         <div
           className="slide"
@@ -44,6 +46,11 @@ function App() {
           {console.log(`Current image: ${images[imgIndex]}`)}
         </div>
         <button className="next" onClick={nextSlide}>&#10095;</button>
+
+
+      </div> */}
+      <div className='container'>
+        <Services />
       </div>
     </>
   );

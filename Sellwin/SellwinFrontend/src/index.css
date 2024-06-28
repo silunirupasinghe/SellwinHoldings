@@ -112,3 +112,15 @@
   background-position: center;
   transition: background-image 1s ease-in-out;
 }
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-weight: 100;
+}
+.container2{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
