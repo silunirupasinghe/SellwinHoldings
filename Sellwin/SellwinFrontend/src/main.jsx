@@ -12,6 +12,7 @@ import ContactUs from './pages/ContactUs.jsx';
 import './lib/fontawesome.js'
 import Services from './pages/Sectors.jsx';
 import Sectors from './pages/Sectors.jsx';
+import Careers from './pages/Careers.jsx';
 const router = createBrowserRouter([
   {
     element: <RootLayout />,
@@ -40,7 +41,12 @@ const router = createBrowserRouter([
       {
         path: '/production',
         element: <Production/>
+      },
+      {
+        path: '/careers',
+        element: <Careers/>
       }
+
     ]
   }
 ]);
