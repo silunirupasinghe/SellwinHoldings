@@ -4,7 +4,7 @@ import Services from "./Services"
 function Sectors() {
     return (
         <>
-            <div className="banner bg-indigo-900 text-white py-10 ">
+            <div className="banner bg-indigo-900 text-white py-10 mt-24">
                 <h1 className="text-4xl font-semibold text-center">BUSINESS SECTORS</h1>
                 <p className="mx-auto max-w-3xl text-xl my-6 text-center">
                     At Sellwin Holdings, we are proud to offer a diverse range of services that cater

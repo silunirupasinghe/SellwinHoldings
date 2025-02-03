@@ -57,7 +57,7 @@ function Products() {
 
   return (
     <>
-      <div className="banner bg-indigo-900 text-white ">
+      <div className="banner bg-[#00509E] text-white mt-20">
         <h1 className=" text-4xl pt-6 text-center font-semibold ">
           DISTRIBUTION
         </h1>

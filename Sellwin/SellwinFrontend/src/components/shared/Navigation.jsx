@@ -1,52 +1,56 @@
 import React, { useState } from "react";
-import logo1 from "../../assets/Sellwin logo Copy.jpg";
 import logo from "../../assets/LOGO.jpg";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <div className="container mx-auto my-4 px-4">
-        <nav className="flex items-center justify-between flex-wrap">
-          <div className="flex items-center flex-shrink-0 mr-6">
-            <Link to={"/"} className="">
-              <img src={logo} alt="Sellwin Logo" className="h-28 w-66 mr-4" />
+      <div className="container mx-auto px-4 fixed top-0 left-0 w-full bg-white shadow-md z-[50]">
+        <nav className="flex items-center justify-between flex-wrap py-4">
+          {/* Logo */}
+          <div className="flex items-center flex-shrink-0">
+            <Link to={"/"}>
+              <img src={logo} alt="Sellwin Logo" className="h-16 w-auto" />
             </Link>
           </div>
-          <div className="block lg:hidden">
+
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center px-3 py-2 border rounded text-gray-400 border-gray-400 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded text-gray-700 border-gray-400 hover:text-blue-500 hover:border-blue-500"
             >
               <FontAwesomeIcon icon={faBars} />
             </button>
           </div>
+
+          {/* Navbar Links */}
           <div
-            className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
+            className={`w-full lg:flex lg:items-center lg:w-auto transition-all duration-300 ease-in-out ${
               isOpen ? "block" : "hidden"
             }`}
           >
             <div className="text-sm lg:flex-grow lg:flex lg:justify-center lg:items-center">
-              <Link to={"/"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
+              <Link to={"/"} className="block lg:inline-block text-lg m-4 text-gray-800 hover:text-blue-500">
                 Home
               </Link>
-              <Link to={"/products"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
+              <Link to={"/products"} className="block lg:inline-block text-lg m-4 text-gray-800 hover:text-blue-500">
                 Our Products
               </Link>
-              <Link to={"/AboutUs"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
+              <Link to={"/AboutUs"} className="block lg:inline-block text-lg m-4 text-gray-800 hover:text-blue-500">
                 About Us
               </Link>
-              <Link to={"/sectors"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
+              <Link to={"/sectors"} className="block lg:inline-block text-lg m-4 text-gray-800 hover:text-blue-500">
                 Sectors
               </Link>
-              <Link to={"/careers"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
+              <Link to={"/careers"} className="block lg:inline-block text-lg m-4 text-gray-800 hover:text-blue-500">
                 Careers
               </Link>
-              <Link to={"/contactUs"} className="block mt-4 lg:inline-block lg:mt-0 text-lg justify-center m-5 text-gray-800 hover:text-blue-300">
+              <Link to={"/contactUs"} className="block lg:inline-block text-lg m-4 text-gray-800 hover:text-blue-500">
                 Contact Us
               </Link>
             </div>

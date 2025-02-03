@@ -5,7 +5,7 @@ import nalina from "../assets/aboutUs/nalina.jpeg";
 function AboutUs() {
   return (
     <>
-      <div className="banner bg-indigo-900 text-white py-10">
+      <div className="banner bg-indigo-900 text-white py-10 mt-24">
         <h1 className="text-4xl font-semibold text-center">ABOUT US</h1>
         <p className="mx-auto max-w-3xl text-xl my-6 text-center">
           Welcome to Sellwin Holdings (Pvt) Ltd, the leading distributor of

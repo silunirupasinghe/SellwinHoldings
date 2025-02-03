@@ -6,7 +6,7 @@ import manufacturing from "../assets/sectors/manufacturing.jpg";
 function Services() {
     return (
         <>
-            <div className="container mx-auto text-center my-10 px-4 md:px-0">
+            <div className="container mx-auto text-center my-10 px-4 md:px-0 ">
                 <h className="font-thin text-center text-lg text-sky-600">BRIDGING QUALITY & CONVENIENCE</h>
                 <h2 className="my-3 text-4xl font-bold mb-12">Discover Our Range of Excellence</h2>
 

@@ -1,12 +1,11 @@
 import React from "react";
-
 import careerSales from "../assets/careers/careersSales.jpg";
 
 function Careers() {
   return (
     <>
       {/* Banner Section */}
-      <div className="bg-indigo-900 text-white py-10 px-4">
+      <div className="bg-indigo-900 text-white py-10 px-4 mt-20">
         <h1 className="text-3xl md:text-4xl font-semibold text-center">
           CAREERS
         </h1>
